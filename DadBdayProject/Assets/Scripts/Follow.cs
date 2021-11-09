@@ -10,10 +10,10 @@ public class Follow : MonoBehaviour {
     private bool move;
     private bool startMove = false;
     public float range;
+    bool startedMove = false;
 
     public float speed = 5f;
     public Rigidbody2D rb;
-    //public Animator animator;
     public SpriteRenderer sr;
     Vector2 direction;
 
@@ -32,8 +32,10 @@ public class Follow : MonoBehaviour {
 
         direction = -direction.normalized;
 
-        if (Mathf.Abs(transform.position.x - targetLocation.x) <= range) {
+        if (Mathf.Abs(transform.position.x - targetLocation.x) <= range && !startedMove) {
+            startedMove = true;
             startMove = true;
+            GameObject.FindGameObjectWithTag("GameController").GetComponent<AudioManager>().Play("Collect");
         }
 
     }

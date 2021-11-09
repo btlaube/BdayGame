@@ -33,9 +33,9 @@ public class AudioManager : MonoBehaviour
     }
 
     void Start(){
-        UpdateSFXVolume(PlayerPrefs.GetFloat("SFXVolume"));
-        UpdateMusicVolume(PlayerPrefs.GetFloat("musicVolume"));
-        Play("MainTheme");
+        //UpdateSFXVolume(PlayerPrefs.GetFloat("SFXVolume"));
+        //UpdateMusicVolume(PlayerPrefs.GetFloat("musicVolume"));
+        //Play("MainTheme");
     }
 
     public void UpdateSFXVolume(float value) {

@@ -18,7 +18,6 @@ public class Door : MonoBehaviour
     void Update()
     {
         if (thisCollider.IsTouching(playerCollider) && Input.GetKeyDown("space")) {
-            Debug.Log("Touching");
             GameObject.FindGameObjectWithTag("LevelLoader").GetComponent<LevelLoader>().nextRoom(currentRoom, nextRoom);
         }
     }

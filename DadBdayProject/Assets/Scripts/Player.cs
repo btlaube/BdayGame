@@ -14,4 +14,9 @@ public class Player : MonoBehaviour
     public void addFollower() {
         numFollowers++;
     }
+
+    public void setFollowers(int numFollowers) {
+        this.numFollowers = numFollowers;
+    }
+
 }

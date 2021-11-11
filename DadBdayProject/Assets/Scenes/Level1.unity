@@ -2211,6 +2211,10 @@ PrefabInstance:
       propertyPath: cameraGroup
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5009993530351674444, guid: c88d3205b27e1ae4594636e7d88d4b47, type: 3}
+      propertyPath: playerTransform
+      value: 
+      objectReference: {fileID: 1944149411}
     - target: {fileID: 5009993530351674446, guid: c88d3205b27e1ae4594636e7d88d4b47, type: 3}
       propertyPath: m_Name
       value: LevelLoader

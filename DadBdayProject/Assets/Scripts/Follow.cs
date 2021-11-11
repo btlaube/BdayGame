@@ -25,11 +25,9 @@ public class Follow : MonoBehaviour {
 
         if (target.position.x < transform.position.x) {
             targetLocation.x = target.position.x + (numFollowers * followDistance);
-            //sr.flipX = true;
         }
         else if (target.position.x > transform.position.x) {
             targetLocation.x = target.position.x - (numFollowers * followDistance);
-            //sr.flipX = false;
         }
 
         direction.x = transform.position.x - targetLocation.x;
@@ -55,5 +53,10 @@ public class Follow : MonoBehaviour {
         }
     }
 
+    public void lastRoom() {
+        transform.parent = GameObject.Find("Room9").transform;
+        Debug.Log("ran");
+        gameObject.GetComponent<Follow>().enabled = false;
+    }
 
 }

@@ -9,6 +9,7 @@ public class LevelLoader : MonoBehaviour
     public float transitionTime = 1f;
     public GameObject player;
     public Transform roomGroup;
+    //public Transform playerTransform;
 
     public void LoadNextLevel() {
         StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
@@ -94,6 +95,19 @@ public class LevelLoader : MonoBehaviour
             }
             if (newRoom == 9) {
                 goToNextRoom(8, 9, 2);
+                //foreach (Transform child in player.transform) {
+                //    child.gameObject.GetComponent<Follow>().lastRoom();
+                //}
+                int children = player.transform.childCount;
+                //for (int i = 0; i < children; i++) {
+                //    player.transform.GetChild(i).GetComponent<Follow>().lastRoom();
+                //}
+                int i = 0;
+                while (player.transform.childCount != 0) {
+                    player.transform.GetChild(i).GetComponent<Follow>().lastRoom();
+                    i++;
+                }
+                player.GetComponent<Player>().setFollowers(0);
             }
         }
         if (oldRoom == 9) {

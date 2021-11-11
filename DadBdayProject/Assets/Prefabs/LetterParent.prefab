@@ -149,7 +149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1550110325085581104, guid: 6dd625d9e61325a4da2cd549270b8698, type: 3}
   followDistance: 0.07
-  range: 0.5
+  range: 0.15
   speed: 0.5
   rb: {fileID: 5941393153940601535}
   sr: {fileID: 5941393152967303607}

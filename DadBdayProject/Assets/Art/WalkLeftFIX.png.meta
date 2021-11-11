@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: e57b6e5589e3dd745a89776127bc6d81
+guid: f2b488231221ec142b03b230a87b304f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4035959289877228764
-    second: Walk_0
+      213: 5969736034615303307
+    second: WalkLeftFIX_0
   - first:
-      213: -982904232830982447
-    second: Walk_1
+      213: 4386750129404412297
+    second: WalkLeftFIX_1
   - first:
-      213: -350908408369970039
-    second: Walk_2
+      213: -2422184938595479940
+    second: WalkLeftFIX_2
   - first:
-      213: -5409570386352685021
-    second: Walk_3
+      213: 1263500544574222875
+    second: WalkLeftFIX_3
   - first:
-      213: 1553940418269799609
-    second: Walk_4
+      213: 6299613833302387350
+    second: WalkLeftFIX_4
   - first:
-      213: 2416434504916517810
-    second: Walk_5
+      213: 6164340548689694721
+    second: WalkLeftFIX_5
   - first:
-      213: -6428935122508569504
-    second: Walk_6
+      213: 1593286774779833774
+    second: WalkLeftFIX_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -124,12 +124,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Walk_0
+      name: WalkLeftFIX_0
       rect:
         serializedVersion: 2
-        x: 18
+        x: 10
         y: 20
-        width: 17
+        width: 9
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -138,103 +138,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cdce119379b920830800000000000000
-      internalID: 4035959289877228764
+      spriteID: b8c18126b43c8d250800000000000000
+      internalID: 5969736034615303307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_1
+      name: WalkLeftFIX_1
       rect:
         serializedVersion: 2
-        x: 41
-        y: 20
-        width: 17
-        height: 28
-      alignment: 9
-      pivot: {x: 0.61, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d6a1e1dec50c52f0800000000000000
-      internalID: -982904232830982447
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_2
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 20
-        width: 17
-        height: 33
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 984096a69a2512bf0800000000000000
-      internalID: -350908408369970039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_3
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 20
-        width: 17
-        height: 28
-      alignment: 9
-      pivot: {x: 0.44, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 320c9fd05685de4b0800000000000000
-      internalID: -5409570386352685021
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Walk_4
-      rect:
-        serializedVersion: 2
-        x: 92
+        x: 27
         y: 20
         width: 17
         height: 29
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 9
+      pivot: {x: 0.37, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b4e719c394b09510800000000000000
-      internalID: 1553940418269799609
+      spriteID: 9818c8d200ed0ec30800000000000000
+      internalID: 4386750129404412297
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_5
+      name: WalkLeftFIX_2
       rect:
         serializedVersion: 2
-        x: 105
+        x: 51
         y: 20
-        width: 17
+        width: 10
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -243,19 +180,40 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b3cb802166e88120800000000000000
-      internalID: 2416434504916517810
+      spriteID: c7e07b2b1aba26ed0800000000000000
+      internalID: -2422184938595479940
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Walk_6
+      name: WalkLeftFIX_3
       rect:
         serializedVersion: 2
-        x: 120
+        x: 70
         y: 20
-        width: 17
+        width: 11
+        height: 30
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b12fbdc0d0bd88110800000000000000
+      internalID: 1263500544574222875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkLeftFIX_4
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 20
+        width: 10
         height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -264,8 +222,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06428da6195d7c6a0800000000000000
-      internalID: -6428935122508569504
+      spriteID: 69a20249769bc6750800000000000000
+      internalID: 6299613833302387350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkLeftFIX_5
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 20
+        width: 9
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1009f27a1132c8550800000000000000
+      internalID: 6164340548689694721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WalkLeftFIX_6
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 20
+        width: 12
+        height: 30
+      alignment: 9
+      pivot: {x: 0.62, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ead641c41ed7c1610800000000000000
+      internalID: 1593286774779833774
       vertices: []
       indices: 
       edges: []

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8023466133265539178}
   m_Layer: 0
   m_Name: AudioManager
-  m_TagString: Untagged
+  m_TagString: GameController
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -43,4 +43,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ffb8e2c1727ef7488d7643eee78c4c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sounds: []
+  sounds:
+  - name: Collect
+    clip: {fileID: 8300000, guid: 485a4ac609b3daa4a804d8555d8340e3, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Door1
+    clip: {fileID: 8300000, guid: 02b703fd5d52e364c9bbf5278dda3d7b, type: 3}
+    volume: 1
+    pitch: 0.5
+    loop: 0
+    source: {fileID: 0}
+  - name: Door2
+    clip: {fileID: 8300000, guid: 69f987c2623bddb4888e806a89542e33, type: 3}
+    volume: 1
+    pitch: 0.5
+    loop: 0
+    source: {fileID: 0}

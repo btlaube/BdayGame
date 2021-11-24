@@ -95,16 +95,17 @@ public class LevelLoader : MonoBehaviour
             }
             if (newRoom == 9) {
                 goToNextRoom(8, 9, 2);
-                Debug.Log(roomGroup.GetChild(9).gameObject.transform.childCount);
-                if (roomGroup.GetChild(9).gameObject.transform.childCount == 15) {
-                    GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("HBD");
-                }
                 int children = player.transform.childCount;
                 int i = 0;
                 while (player.transform.childCount != 0) {
                     player.transform.GetChild(i).GetComponent<Follow>().lastRoom();
                 }
                 player.GetComponent<Player>().setFollowers(0);
+                //Debug.Log(player.GetComponent<Player>().scoreCount);
+                if (player.GetComponent<Player>().scoreCount == 12) {
+                    //GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Collect");
+                    GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("HBD");
+                }
             }
         }
         if (oldRoom == 9) {

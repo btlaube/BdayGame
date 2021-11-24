@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 
     public Text score;
     public float numFollowers;
-    private float scoreCount = 0f;
+    public float scoreCount = 0f;
 
     public float getNumFollowers() {
         return numFollowers;

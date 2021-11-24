@@ -42,7 +42,7 @@ public class Follow : MonoBehaviour {
             GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().addFollower();
             numFollowers = GameObject.FindGameObjectWithTag("Player").GetComponent<Player>().getNumFollowers();
             transform.parent = target;
-            Debug.Log(numFollowers);
+            //Debug.Log(numFollowers);
         }
 
     }

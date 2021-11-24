@@ -10,7 +10,7 @@ public class Follow : MonoBehaviour {
     private bool move;
     private bool startMove = false;
     public float range;
-    bool startedMove = false;
+    private bool startedMove = false;
     private float numFollowers;
 
     public float speed = 5f;
@@ -18,7 +18,8 @@ public class Follow : MonoBehaviour {
     public SpriteRenderer sr;
     Vector2 direction;
 
-
+    public float X;
+    public float Y;
     
 
     void Update() {       
@@ -55,8 +56,8 @@ public class Follow : MonoBehaviour {
 
     public void lastRoom() {
         transform.parent = GameObject.Find("Room9").transform;
-        Debug.Log("ran");
         gameObject.GetComponent<Follow>().enabled = false;
+        transform.position = new Vector2(X, Y);
     }
 
 }

@@ -95,17 +95,14 @@ public class LevelLoader : MonoBehaviour
             }
             if (newRoom == 9) {
                 goToNextRoom(8, 9, 2);
-                //foreach (Transform child in player.transform) {
-                //    child.gameObject.GetComponent<Follow>().lastRoom();
-                //}
+                Debug.Log(roomGroup.GetChild(9).gameObject.transform.childCount);
+                if (roomGroup.GetChild(9).gameObject.transform.childCount == 15) {
+                    GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("HBD");
+                }
                 int children = player.transform.childCount;
-                //for (int i = 0; i < children; i++) {
-                //    player.transform.GetChild(i).GetComponent<Follow>().lastRoom();
-                //}
                 int i = 0;
                 while (player.transform.childCount != 0) {
                     player.transform.GetChild(i).GetComponent<Follow>().lastRoom();
-                    i++;
                 }
                 player.GetComponent<Player>().setFollowers(0);
             }
@@ -118,7 +115,7 @@ public class LevelLoader : MonoBehaviour
     }
 
     private void goToNextRoom(int oldRoom, int newRoom, int doorNum) {
-        GameObject.FindGameObjectWithTag("GameController").GetComponent<AudioManager>().Play("Door2");
+        GameObject.Find("AudioManager").GetComponent<AudioManager>().Play("Door2");
         player.transform.position = new Vector2(roomGroup.GetChild(newRoom).GetChild(doorNum).transform.position.x, player.transform.position.y);
         roomGroup.GetChild(newRoom).gameObject.SetActive(true);
         roomGroup.GetChild(oldRoom).gameObject.SetActive(false);
